@@ -28,10 +28,14 @@ css/style.css
 
 Screenshots of all pages: 
 index page.
+
 ![alt text](<Screenshot from 2026-01-22 20-36-55.png>)
 dashboard page.
+
 ![alt text](<Screenshot from 2026-01-22 20-37-10.png>)
 login page. 
+
 ![alt text](<Screenshot from 2026-01-22 20-37-21.png>)
 list page.
+
 ![alt text](<Screenshot from 2026-01-22 20-37-40.png>)
