@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #222;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: lightgray;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: gray;
+}
+
+/* Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* Dashboard */
+.dashboard {
+    margin-left: 220px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: lightgray;
+    padding: 20px;
+    animation: fadeIn 1s;
+}
+
+/* Data Page */
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.data-card {
+    padding: 20px;
+    background: #ddd;
+    transition: transform 0.3s;
+}
+
+.data-card:hover {
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .dashboard,
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+}
