@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">H1 tag</h1>
+    <p class="para"> this is paragraph</p>
+
+
+    <button id="btn">click</button>
+    <ul>
+        <li id="item">Apple</li>
+        <li id="item">Ball</li>
+        <li id="item">cat</li>
+    </ul>
+
+    <script>
+        let h1 = document.getElementById('head1');
+        console.log(h1);
+
+        let p = document.getElementsByClassName("para");
+        console.log(p);
+
+        let tag = document.getElementsByTagName("li")
+        console.log(tag);
+
+        let first = document.querySelector(".para")
+        console.log(first);
+
+        let list2 = document.querySelectorAll('.item');
+        console.log(list2)
+        
+    </script>
+</body>
+</html>
